@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display1(){
+            document.write("Return-type function"+"</br>");
+            return 10;//Return-value
+        }
+
+        var res= display1();//Function-Call
+        document.write(res+"</br>");
+
+        //How to store the return value?
+        //A:Assign a variable to the function call
+
+        //How to directly print return value without storing it?
+        //A:Call the function inside document.write()
+        document.write(display1()+"</br>");
+        display1();
+    </script>
+</body>
+</html>
