@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display1(){
+            var x = 300;//Local-variable
+            document.write(x+"</br>");
+        }
+        display1();
+
+        document.write(x+"</br>");//Error
+
+        function display2(){
+            document.write(x+"</br>");//Error
+        }
+        display2();
+    </script>
+</body>
+</html>
