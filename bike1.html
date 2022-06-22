@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bike
+        {
+            name;
+            color;
+            price;
+
+            details = function()
+            {
+                document.write(this.name+"</br>");
+                document.write(this.color+"</br>");
+                document.write(this.price+"</br>");
+                document.write("</br>");
+            }
+        }
+
+        var b1 = new bike();
+        b1.name = "Duke";
+        b1.color = "Black";
+        b1.price = 230000;
+
+        var b2 = new bike();
+        b2.name = "RIS";
+        b2.color = "Blue";
+        b2.price = 210000;
+
+        b1.details();
+        b2.details();
+    </script>
+</body>
+</html>
