@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sub1="Java-Script";//Global Variable
+        function Outerfunc()
+        {
+            var sub2 = "Java";//Local-Variable(Outer-Function-Scope)
+            document.write("outer-function"+"</br>");
+            document.write(sub1+"</br>");
+            document.write(sub2+"</br>");
+            //+document.write(sub3+"</br>");//Inner-Func-variable
+
+            function InnerFunc()
+            {
+                var sub3 = "SQL"//Local-variable(Inner-Function-Scope)
+                document.write("Inner-func-1"+"</br>");
+                document.write(sub1+" "+sub2+" "+sub3+"</br>");
+            }
+            InnerFunc();
+        }
+        var x = Outerfunc();//Outer-Function-Call
+        x();
+
+
+    </script>
+</body>
+</html>
