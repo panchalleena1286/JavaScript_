@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*CREATE A CLASS BIKE AND DEFINE PROPERTIES NAME, COLOR, SHOWROOM PRICE, RTOTAX
+          CREATE MIN THREE OBJECT AND ASSIGN THE VALUES.
+          CREATE A FUNCTION PRICE TO CALCULATE ONROAD PRICE(SHOWROOM PRICE+RTOTAX)
+          CREATE A FUNCTION CALLED DETAILS AND PRINT THE DETAILS LIKE NAME, COLOR, PRICE(ONROAD PRICE).*/
+        class bike
+        {
+            name;
+            color;
+            sprice;
+            rtotax;
+
+            price = function()
+            {
+                var oprice = this.sprice+this.rtotax;
+                return oprice;
+            }
+
+            details = function()
+            {
+                document.write("Name:" +this.name+"</br>");
+                document.write("Color: "+this.color+"</br>");
+                //document.write("Showroom Price: "+this.sprice+"</br>");
+                //document.write("RtoTax: "+this.rtotax+"</br>")
+                document.write("Onroad Price: "+this.price()+"</br>");
+                document.write("</br>");
+            }
+        }
+
+        var b1 = new bike();
+        b1.name = "z900";
+        b1.color = "Green";
+        b1.sprice = 75000;
+        b1.rtotax = 145000;
+
+        var b2 = new bike();
+        b2.name = "RIS";
+        b2.color = "Blue";
+        b2.sprice = 175000;
+        b2.rtotax = 32000;
+
+        var b3 = new bike();
+        b3.name = "z900";
+        b3.color = "Green";
+        b3.sprice = 185000;
+        b3.rtotax = 40000;
+
+        b1.price();
+        b1.details();
+        b2.price();
+        b2.details();
+        b3.price();
+        b3.details();
+
+
+
+    </script>
+</body>
+</html>
