@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var test1 = function(a)
+        {
+            return a();
+        }
+        var res = test1(function(){return"Java---Script"});
+        document.write(res);
+        */
+
+
+       var test = function()
+        {
+            return function(){return"JavaScript.."};
+        }
+        var res = test();
+        document.write(res());
+        document.write("</br>");
+        document.write("</br>");
+
+        /*var res = function()
+        {
+            return "JavaScript";
+        }*/
+        
+        
+        var test1 = function(name,place)
+        {
+            document.write(name+"</br>");
+            document.write(place+"</br>");
+            document.write(name+" "+place+"</br>");
+        }
+        document.write(test1("Abhishek", "Banglore"));
+        document.write("</br>");
+        document.write("</br>");
+
+
+        var test3 = function()
+        {
+            return function(){return"Full-Stack"};
+        }
+        var res1 = test3();//Function-Call
+        document.write(res1());
+
+        /*var res1 = function()
+        {
+            return "Full-Stack";
+        }*/
+
+    </script>
+</body>
+</html>
