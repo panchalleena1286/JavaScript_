@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function OuterFunc()
+    {
+        document.write("Outer-Function"+"</br>");
+        function InnerFunc()
+        {
+            document.write("Inner-Function"+"</br>");
+        }
+        InnerFunc();//Inner-Function-Call
+    }
+    OuterFunc();//Outer-Function-Call
+    document.write("</br>");
+
+    function OuterFunc1()
+    {
+        document.write("Outer-Function-1"+"</br>");
+        function InnerFunc1()
+        {
+            document.write("Inner-Function-1"+"</br>");
+        }
+        return InnerFunc1;
+    }
+    var x=OuterFunc1();//Outer-Function CAll
+    x();//Inner-Function Call
+
+    /*var x = function InnerFunc()
+    {
+        document.write("Inner-Function"+"</br>");
+    }*/
+
+
+    </script>
+</body>
+</html>
