@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test1(...args)
+        {
+            document.write(args[0]+"</br>");
+            document.write(args[1]+"</br>");
+            document.write(args[2]+"</br>");
+        }
+        test1(10,20,30);
+        document.write("</br>");
+
+
+        function test2(a,b,...test)
+        {
+            document.write(test[0]+"</br>");
+            document.write(test[1]+"</br>");
+            document.write(test[2]+"</br>");
+        }
+        test2(10,20,30,40,50);
+        document.write("</br>");
+
+        function test3(a,b,...test)
+        {   document.write(a+"</br>");
+            document.write(b+"</br>");
+            document.write(test[0]+"</br>");
+            document.write(test[1]+"</br>");
+            document.write(test[2]+"</br>");
+        }
+        test3(60,70,80,90,95);
+    </script>
+</body>
+</html>
