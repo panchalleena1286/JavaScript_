@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Objects</title>
+</head>
+<body>
+    <script>
+        var arr = new Array(2);
+        arr[0] = "Raj";
+        arr[1] = "Jason";
+
+        document.writeln("<br> Given array "+arr);
+
+        arr.unshift(200);
+        document.writeln("<br> Array element after unshift "+arr);
+
+        arr.shift()
+        document.writeln("<br> Array Element after shift "+arr);
+
+        arr.push(600);
+        document.writeln("<br> Array element after push "+arr);
+
+        arr.pop();
+        document.writeln("<br> Array element after pop "+arr);
+    </script>
+</body>
+</html>
