@@ -229,13 +229,30 @@ console.log(myDate.getHours());
 */
 
 //DOM Manipulation
-let element = document.getElementById('click');
-console.log(element);
+// let element = document.getElementById('click');
+// console.log(element);
 
-let eleClass = document.getElementsByClassName("container")
-console.log(eleClass);
-// eleClass[0].getElementsByClassName.background = "yellow";
-eleClass[0].classList.add("bg-primary")
+// let eleClass = document.getElementsByClassName("container")
+// console.log(eleClass);
+// // eleClass[0].getElementsByClassName.background = "yellow";
+// eleClass[0].classList.add("bg-primary")
 
+//Selecting using Query
+sel = document.querySelector('.container')
+console.log(sel);
+sel = document.querySelectorAll('.container')
+console.log(sel);
 
+//Events in JavaScript
+// function clicked(){
+//     console.log('the button was clicked');
+// }
+
+// window.onload = function(){
+//     console.log('the document was loaded');
+// }
+
+firstContainer.addEventListner('click', function(){
+    console.log("clicked on container");
+})
 
