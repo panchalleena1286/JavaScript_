@@ -229,6 +229,13 @@ console.log(myDate.getHours());
 */
 
 //DOM Manipulation
+let element = document.getElementById('click');
+console.log(element);
+
+let eleClass = document.getElementsByClassName("container")
+console.log(eleClass);
+// eleClass[0].getElementsByClassName.background = "yellow";
+eleClass[0].classList.add("bg-primary")
 
 
 

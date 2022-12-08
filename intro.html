@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            border: 2px solid red;
+            margin: 3px;
+            background-color: cyan;
+            padding: 9px;
+        }
+        .bg-primary{
+            background-color: blue;
+        }
+        .text-success{
+            color: white;
+        }
+    </style>
+</head>
 <body>
 
 <h2>What Can JavaScript Do?</h2>
 
-<p id="demo">JavaScript can change html content</p>
+<div id="firstContainer" class="container">
+    <button id="click">click me</button>
+    <p>this is a para</p>
+</div>
 
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me</button>
-
+<div class="container">
+    <p id="demo">JavaScript can change html content</p>
+</div>
+<script src="intro.js"></script>
 </body>
 </html>
