@@ -228,7 +228,7 @@ console.log(myDate.getMonth());
 console.log(myDate.getHours());
 */
 
-//DOM Manipulation
+//8. DOM Manipulation
 // let element = document.getElementById('click');
 // console.log(element);
 
@@ -238,10 +238,10 @@ console.log(myDate.getHours());
 // eleClass[0].classList.add("bg-primary")
 
 //Selecting using Query
-sel = document.querySelector('.container')
-console.log(sel);
-sel = document.querySelectorAll('.container')
-console.log(sel);
+// sel = document.querySelector('.container')
+// console.log(sel);
+// sel = document.querySelectorAll('.container')
+// console.log(sel);
 
 //Events in JavaScript
 // function clicked(){
@@ -252,7 +252,51 @@ console.log(sel);
 //     console.log('the document was loaded');
 // }
 
-firstContainer.addEventListner('click', function(){
-    console.log("clicked on container");
-})
+// firstContainer.addEventListner('click', function(){
+//     console.log("clicked on container");
+// })
+
+//9. Arrow Function
+// function summ(a, b){
+//     return a+b;
+// }
+
+// summ = (a,b)=>{
+//     return a+b;
+// }
+
+//SetTimout and setinterval
+// logKaro = ()=>{
+//     console.log("i am your log");
+// }
+// // // setTimeout(logKaro, 2000);
+
+// // setInterval(logKaro, 5000);
+
+//  clr = setTimeout(logKaro, 2000);
+
+ //Use clearIntervel(clr)/clearTimeout(clr) to cancel setIntervL/setTimeout
+
+//  10. JavaScript localStorage
+
+// localStorage.setItem('name', 'leena')
+// localStorage.getItem('name')
+//localStorage.removeItem('name')
+// localStorage.clear()
+
+//11. JSON
+// obj = {name: "leena", length: 5, a: {this: "that"}}
+// jso = JSON.stringify(obj);
+// console.log(jso);
+// console.log(typeof jso);
+// parsed = JSON.parse(`{"name": "leena", "length": 5, "a": {"this": "that"}}`)
+// console.log(parsed);
+
+//12. Backticks/Template literals
+a = 86;
+console.log(`this is my ${a}`);
+
+
+
+
 
