@@ -108,14 +108,27 @@
         itemJsonArray.forEach((element, index) => {
           str += `
           <tr>
-              <th scope="row">${index}</th>
+              <th scope="row">${index + 1}</th>
               <td>${element[0]}</td>
               <td>${element[1]}</td>
-              <td><button class="btn btn-sm btn-primary">Delete</button></td>
+              <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td>
             </tr>`;
         });
         tableBody.innerHTML += str;
       });
+
+      add = document.getElementById("add");
+      add.addEventListener("click", update);
+      update();
+      function deleted(item){
+        console.log("Delete", item);
+        itemJsonArray = localStorage.getItem('itemJson')
+        itemJsonArray = JSON.parse(itemJsonArrayStr);
+        //Delete itemIndex element from the array
+        itemJsonArray.splice(itemIndex, 1);
+        localStorage.setItem('itemJson', JSON.stringify(itemJsonArray));
+        update();
+      }
     </script>
   </body>
 </html>
