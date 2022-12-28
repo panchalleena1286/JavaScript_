@@ -72,13 +72,7 @@
             </tr>
           </thead>
           <tbody id="tableBody" >
-            <tr>
-              <th scope="row">1</th>
-              <td>Get some Coffee</td>
-              <td>you need as you are a coder</td>
-              <td><button class="btn btn-sm btn-primary">Delete</button></td>
-            </tr>
-            
+           
           </tbody>
         </table>
       </div>
@@ -87,6 +81,8 @@
     <script>
       add = document.getElementById("add");
       add.addEventListener("click" , ()=>{
+      
+      
         console.log("updating");
         tit = document.getElementById('title').value;
         desc = document.getElementById('description').value;
@@ -101,6 +97,7 @@
           itemJsonArray.push([tit, desc]);
           localStorage.setItem('itemJson', JSON.stringify(itemJsonArray))
         }
+      
         
         //Populate the table
         let tableBody = document.getElementById("tableBody");
@@ -122,12 +119,12 @@
       update();
       function deleted(item){
         console.log("Delete", item);
-        itemJsonArray = localStorage.getItem('itemJson')
+        itemJsonArrayStr = localStorage.getItem('itemJson')
         itemJsonArray = JSON.parse(itemJsonArrayStr);
         //Delete itemIndex element from the array
-        itemJsonArray.splice(itemIndex, 1);
+        itemJsonArray.splice(itemJsonArray, 1);
         localStorage.setItem('itemJson', JSON.stringify(itemJsonArray));
-        update();
+        
       }
     </script>
   </body>
