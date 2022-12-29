@@ -1,0 +1,38 @@
+.text-center{
+    text-align: center;
+}
+
+.bg-color{
+    background: cadetblue;
+}
+
+.mx-auto{
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.g-c{
+    border-color: #e6e6e6;
+    background-color: #e6e6e6;
+}
+
+.b-c{
+    border-color: #999;
+    background-color: #999;
+}
+
+.y-c{
+    border-color: #eaa821;
+    background-color: #eaa821;
+}
